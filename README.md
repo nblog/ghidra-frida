@@ -9,9 +9,16 @@
 ### Step-by-Step Compilation Instructions
 
 #### Clone the Repository
+`~\repos\ghidra$`
 ```bash
-~\repos\ghidra$ git clone https://github.com/nblog/ghidra-frida Ghidra\Debug\Debugger-agent-xfrida
+git clone https://github.com/nblog/ghidra-frida Ghidra/Debug/Debugger-agent-xfrida
 ```
+
+#### Download Python Dependencies
+```bash
+pip download Ghidra/Debug/Debugger-agent-xfrida/src/main/py --dest Ghidra/Debug/Debugger-agent-xfrida/src/main/py/dist
+```
+Note: Since `protobuf` is already imported by default, it can be removed.
 
 #### Initialize and Fetch Dependencies
 ```bash
