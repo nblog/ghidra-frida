@@ -29,3 +29,13 @@ repositories {
 
 // Exclude additional files from the built extension
 // Ex: buildExtension.exclude '.idea/**'
+
+// Include Python package in the extension zip
+zipExtensions {
+	dependsOn assemblePyPackage
+	from (assemblePyPackage) {
+		exclude '**/*.egg-info'
+		exclude 'build'
+		into { getBaseProjectName(project) + "/pypkg" }
+	}
+}
