@@ -15,6 +15,7 @@
 # limitations under the License.
 ##
 #@title frida
+#@image-opt env:OPT_TARGET_IMG
 #@desc <html><body width="300px">
 #@desc   <h3>Launch with <tt>frida</tt></h3>
 #@desc   <p>This will launch the target on the local machine using <tt>frida</tt>. 
