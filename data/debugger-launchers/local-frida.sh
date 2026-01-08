@@ -28,7 +28,7 @@
 #@env OPT_PYTHON_PATH:str="python3" "Path to python" "The path to the Python 3 interpreter. Omit the full path to resolve using the system PATH."
 # Use env instead of args, because "all args except first" is terrible to implement in batch
 #@env OPT_TARGET_DEVICE:str="local" "Device" "The target device"
-#@env OPT_TARGET_IMG:str="" "Image" "The target binary executable image"
+#@env OPT_TARGET_IMG:file="" "Image" "The target binary executable image"
 #@env OPT_TARGET_ARGS:str="" "Arguments" "Command-line arguments to pass to the target"
 
 "$OPT_PYTHON_PATH" -i ../support/local-frida.py
