@@ -23,7 +23,6 @@ git clone https://github.com/nblog/ghidra-frida Ghidra/Debug/Debugger-agent-xfri
 ```bash
 pip download Ghidra/Debug/Debugger-agent-xfrida/src/main/py --dest Ghidra/Debug/Debugger-agent-xfrida/src/main/py/dist
 ```
-Note: Since `protobuf` is already imported by default, it can be removed.
 
 #### Build the Python Package
 ```bash
